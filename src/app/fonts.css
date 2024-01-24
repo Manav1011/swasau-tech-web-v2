@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Azonix';
+    src: url('/fonts/Azonix.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+
+@font-face {
+    font-family: 'MoonLight';
+    src: url('/fonts/MoonLight.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'MoonLight2';
+    src: url('/fonts/MoonLight2.otf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'dosislight';
+    src: url('/fonts/dosis.light.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('/fonts/oswald.ttf') format('opentype');
+    /* Additional font properties (e.g., font-weight, font-style) can be specified here */
+}
