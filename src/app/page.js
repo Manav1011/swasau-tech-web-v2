@@ -15,10 +15,16 @@ export default function Home() {
     ssr:false,
     loading: () => <ServiceSkeleton/>
   });
+  const TeamSection = dynamic(() => import("../components/home/TeamSection"), {
+    suspense: true,
+    ssr:false,
+    loading: () => <ServiceSkeleton/>
+  });
   return (
     <>
       <MainGraphic grad={gradient_arr[choosed_grad_index]}/>
       <ServiceListing/>
+      <TeamSection/>
     </>
   );
 }
