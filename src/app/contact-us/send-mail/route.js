@@ -1,4 +1,4 @@
-import SendMail from "../../../hooks/useMail"
+import SendMail from "@/hooks/UseMail"
 export async function POST(request) {    
     const {from,to,subject,text,html} = await request.json()    
     const response = {
