@@ -1,4 +1,6 @@
 import MainGraphic from "@/components/home/MainGraphic";
+import dynamic from "next/dynamic";
+import ServiceSkeleton from "@/skeletons/ServiceSkeleton";
 
 export default function Home() {
   const gradient_arr = [
@@ -8,7 +10,15 @@ export default function Home() {
     "bg-gradient-to-r from-purple-500 to-pink-500"
   ]
   const choosed_grad_index = Math.floor(Math.random() * gradient_arr.length)
+  const ServiceListing = dynamic(() => import("@/components/home/ServiceListing"), {
+    suspense: true,
+    ssr:false,
+    loading: () => <ServiceSkeleton/>
+  });
   return (
-    <MainGraphic grad={gradient_arr[choosed_grad_index]}/>
+    <>
+      <MainGraphic grad={gradient_arr[choosed_grad_index]}/>
+      <ServiceListing/>
+    </>
   );
 }
