@@ -35,7 +35,7 @@ return (
         {member ? <div className="bg-gray-100">
              <div className="">
              {/* top content */}
-             <div className="flex rounded-t-lg bg-top-color sm:px-2 w-full mx-5">
+             <div className="flex rounded-t-lg bg-top-color sm:px-2  mx-5">
                  <div className="h-40 w-40 overflow-hidden sm:rounded-full sm:relative sm:p-0 mt-10">
                  <Image src={member.displayPicture.url}  alt="No Image" width={200} height={200}/>
                  </div>
