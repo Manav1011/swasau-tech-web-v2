@@ -1,11 +1,10 @@
 import axios from "axios";
-
+console.log(process.env.CONTENTFUL_AUTH);
 async function UseAPI(query, variables) {
   let res = {
     error: false,
     data: null,
-  };
-
+  };  
   try {
     const response = await axios.post(
       'https://graphql.contentful.com/content/v1/spaces/szk2cuaoivwt/environments/master',
@@ -15,7 +14,7 @@ async function UseAPI(query, variables) {
       },
       {
         headers: {          
-          'Authorization': 'Bearer VCYEOUT8qwcOBm9g9xP_q4dJzwcZDnCwcp1i0jEsUUQ',
+          'Authorization': `Bearer ${process.env.CONTENTFUL_AUTH}`,
         },
       }
     );

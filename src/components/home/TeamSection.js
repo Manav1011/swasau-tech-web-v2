@@ -4,7 +4,7 @@ import TeamMemberCard from "./TeamMemberCard";
 import UseAPI from "@/hooks/UseAPI";
 import { useEffect, useRef, useState } from "react";
 
-function TeamSection() {  
+function TeamSection() {    
     const [members,setMembers] = useState({
         CEO:null,
         CTO:null,

@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    env: {
+        CONTENTFUL_AUTH: process.env.CONTENTFUL_AUTH,
+    },
     images: {
         remotePatterns: [
             {
