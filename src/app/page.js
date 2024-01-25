@@ -10,6 +10,7 @@ export default function Home() {
     "bg-gradient-to-r from-purple-500 to-pink-500"
   ]
   const choosed_grad_index = Math.floor(Math.random() * gradient_arr.length)
+  console.log(choosed_grad_index);
   const ServiceListing = dynamic(() => import("@/components/home/ServiceListing"), {
     suspense: true,
     ssr:false,
