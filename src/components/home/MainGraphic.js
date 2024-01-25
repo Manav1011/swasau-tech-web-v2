@@ -1,4 +1,3 @@
-export const dynamic = 'force-dynamic'
 async function MainGraphic({grad}) {
     const graphics_arr = [
         "Collaboration-cuate.svg",
