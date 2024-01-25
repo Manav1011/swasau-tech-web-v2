@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 async function MainGraphic({grad}) {
     const graphics_arr = [
         "Collaboration-cuate.svg",
@@ -11,8 +12,7 @@ async function MainGraphic({grad}) {
         "Server-status-cuate.svg",        
         "Printed-circuit-board-pana.svg",
     ]
-    const choosed_graphic_index = Math.floor(Math.random() * graphics_arr.length)    
-    console.log(choosed_graphic_index);
+    const choosed_graphic_index = Math.floor(Math.random() * graphics_arr.length)
   return (
     <div className={`${grad}`}>
       <div className="sm:justify-center justify-start text-center sm:bg-center bg-bottom sm:mx-20 mx-5 sm:bg-right your-custom-class flex  flex-col" style={{ height: 'calc(100vh - 5rem)', backgroundImage: `url(/images/main-graphics/${graphics_arr[choosed_graphic_index]})`, backgroundRepeat:'no-repeat'}}>

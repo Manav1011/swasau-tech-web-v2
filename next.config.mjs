@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = {    
     env: {
         CONTENTFUL_AUTH: process.env.CONTENTFUL_AUTH,
     },
