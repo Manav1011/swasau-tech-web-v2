@@ -20,7 +20,8 @@ export default async function Page({ params }) {
             }
           }`
           const variables = {"id":params.id}
-          const member = await UseAPI(query,variables)
+          const response = await UseAPI(query,variables)
+          const member = response.data.team
       
 return (
         <>
