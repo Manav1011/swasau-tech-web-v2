@@ -14,8 +14,7 @@ function Footer({grad}) {
                       </div>
   
                       <p className="mt-6 max-w-md text-center leading-relaxed text-black-500 sm:max-w-xs sm:text-left">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-                      cum itaque neque.
+                      Swasau Technology is an engineering services company specializing in semiconductor and embedded design for Indian and global industries. As an R&D company, we deliver dream solutions for complex electronic projects, offering expertise in System Integration and Electronics Manufacturing.
                       </p>
   
                       <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -209,7 +208,7 @@ function Footer({grad}) {
                               />
                               </svg>
   
-                              <span className="flex-1 text-black-700">john@doe.com</span>
+                              <span className="flex-1 text-black-700">info@swasau.com</span>
                           </a>
                           </li>
   
@@ -233,13 +232,14 @@ function Footer({grad}) {
                               />
                               </svg>
   
-                              <span className="flex-1 text-black-700">0123456789</span>
+                              <span className="flex-1 text-black-700">+91 94264 04816</span>
                           </a>
                           </li>
   
                           <li
                           className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                           >
+                          <a className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end" target="_blank" href="https://maps.app.goo.gl/TrFbift6UhB1Ppcq7">
                           <svg
                               xmlns="http://www.w3.org/2000/svg"
                               className="h-5 w-5 shrink-0 text-black-900"
@@ -261,8 +261,9 @@ function Footer({grad}) {
                           </svg>
   
                           <address className="-mt-0.5 flex-1 not-italic text-black-700">
-                              213 Lane, London, United Kingdom
+                          Navarangpura, Ahmedabad, Gujarat, 380014.
                           </address>
+                          </a>
                           </li>
                       </ul>
                       </div>
@@ -291,7 +292,7 @@ function Footer({grad}) {
                       </a>
                       </p>
   
-                      <p className="mt-4 text-sm text-black-500 sm:order-first sm:mt-0">&copy; 2022 Company Name</p>
+                      <p className="mt-4 text-sm text-black-500 sm:order-first sm:mt-0">&copy; 2023 Swasau Technologies</p>
                   </div>
                   </div>
               </div>

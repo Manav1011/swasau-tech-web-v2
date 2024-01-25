@@ -57,15 +57,14 @@ function TeamSection() {
   const { ref: myref, inView, entry } = useInView(options);    
   if(members.CTO && members.CTO){
     return (        
-        <section className={`bg-rose-100 pt-5`} id="teamdetailscontainer" ref={myref}>
-          <div className={`${inView ? "team-details" : null} py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`} ref={teammembersRef}>
+        <section className={`pt-5`} id="teamdetailscontainer" ref={myref} style={{backgroundImage:"url('/images/backgrounds/8.de377256.jpeg')"}} >
+          <div className={`${inView ? "team-details" : null} py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`} ref={teammembersRef} style={{backgroundImage:`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`}}>
             <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-slate-900	 sm:text-4xl md:text-[40px]">
                 Our team
               </h2>
-              <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
-                Explore the whole collection of open-source web components and
-                elements built with the utility classNamees from Tailwind
+              <p className="font-light text-slate-500 sm:text-xl ">
+                At Swasau Technologies, we are proud to be fueled by a team of dedicated and skilled professionals. Together, we form a collaborative force committed to turning innovative ideas into reality.
               </p>
             </div>
             <div className="flex flex-wrap justify-evenly">
