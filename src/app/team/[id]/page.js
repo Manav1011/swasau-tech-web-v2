@@ -1,10 +1,6 @@
-'use client'
 import UseAPI from "@/hooks/UseAPI"
 import Image from "next/image"
-import { useState,useEffect } from "react"
-export default function Page({ params }) {
-    const [member,setMember] = useState()
-    useEffect(() => {        
+export default async function Page({ params }) {        
           const query = `query GetTeamMember($id: String!) {
             team(id: $id) {
               name
@@ -24,11 +20,7 @@ export default function Page({ params }) {
             }
           }`
           const variables = {"id":params.id}
-          UseAPI(query,variables).then(memberDetails=>{ 
-            console.log(memberDetails.data.team);           
-            setMember(memberDetails.data.team)            
-          })        
-      },[])      
+          const member = await UseAPI(query,variables)
       
 return (
         <>
