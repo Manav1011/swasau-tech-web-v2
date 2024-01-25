@@ -1,5 +1,4 @@
 import axios from "axios";
-console.log(process.env.CONTENTFUL_AUTH);
 async function UseAPI(query, variables) {
   let res = {
     error: false,

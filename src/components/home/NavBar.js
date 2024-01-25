@@ -47,12 +47,12 @@ function NavBar() {
       {/* Mobile menu, show/hide based on menu state. */}
       <div className="sm:hidden hidden" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          <a
+          {/* <a
             href="#"
             className="text-zinc-950 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
           >
             Clients
-          </a>
+          </a> */}
           <NavButton id={'servicescontainer'} title={'Services'} classlist={'block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'} />
           <NavButton id={'teamdetailscontainer'} title={'Team'} classlist={'block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'} />
           <NavButton id={'teamdetailscontainer'} title={'Projects'} classlist={'block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'} />
