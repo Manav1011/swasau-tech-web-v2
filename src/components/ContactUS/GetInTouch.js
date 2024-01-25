@@ -4,10 +4,10 @@ import Swal from "sweetalert2";
 import Link from "next/link";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-// import { useGlobalState } from "../../context/GlobalStateProvider";
+import { useGlobalState } from "@/context/GlobalStateProvider";
 function GetInTouch() {
   const { register, handleSubmit } = useForm();
-//   const { updateShowLogoLoader } = useGlobalState();  
+  const { updateShowLogoLoader } = useGlobalState();  
   const handleFormSubmit = (data) => {
     updateShowLogoLoader(true);
     axios.post('/contact-us/send-mail', {
