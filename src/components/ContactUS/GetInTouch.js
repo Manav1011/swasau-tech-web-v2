@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { useGlobalState } from "@/context/GlobalStateProvider";
 function GetInTouch() {
   const { register, handleSubmit } = useForm();
-  const { updateShowLogoLoader } = useGlobalState();  
+  const { updateShowLogoLoader } = useGlobalState();
   const handleFormSubmit = (data) => {
     updateShowLogoLoader(true);
     axios.post('/contact-us/send-mail', {
