@@ -1,8 +1,7 @@
 "use client";
-import { useInView } from "react-intersection-observer";
 import TeamMemberCard from "./TeamMemberCard";
 import UseAPI from "@/hooks/UseAPI";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 function TeamSection() {    
     const [members,setMembers] = useState({
@@ -49,17 +48,11 @@ function TeamSection() {
           })
         })
       }
-    },[])
-  let options = {
-    threshold:0.1, 
-    triggerOnce:true,
-  }
-  const teammembersRef = useRef()
-  const { ref: myref, inView, entry } = useInView(options);    
+    },[])  
   if(members.CTO && members.CTO){
     return (        
-        <section className={`pt-5`} id="teamdetailscontainer" ref={myref}  >
-          <div className={`${inView ? "team-details" : null} py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`} ref={teammembersRef}>
+        <section className={`pt-5`} id="teamdetailscontainer">
+          <div className={`py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`}>
             <div className="mx-auto mb-8 w-full sm:w-1/2 lg:mb-16">
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-slate-900	 sm:text-4xl md:text-[40px]">
                 Our team

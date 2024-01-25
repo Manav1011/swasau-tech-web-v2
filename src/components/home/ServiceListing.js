@@ -1,6 +1,5 @@
 'use client'
 import ServiceCard from "./ServiceCard";
-import { useInView } from "react-intersection-observer";
 import UseAPI from "@/hooks/UseAPI";
 import { useEffect, useRef, useState } from 'react';
 
@@ -26,18 +25,12 @@ function ServiceListing() {
       })
     }
   },[])
-  const serviceContainer = useRef()
-  let options = {
-    threshold:0.1,
-    triggerOnce:true,
-    rootMargin: '0px',    
-  }  
-  const { ref: myref, inView, entry } = useInView(options); 
+  // const serviceContainer = useRef()
   if(services){
     return (
-      <section className={`bg-opacity-100 pt-20`} ref={myref} id='servicescontainer'>
+      <section className={`bg-opacity-100 pt-20`} id='servicescontainer'>
       <div>
-        <div className={`${inView?'services-zoom-in':null} container mx-auto`} ref={serviceContainer}>
+        <div className={`container mx-auto`}>
           <div className="flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto mb-12 w-full sm:w-1/2 text-center lg:mb-20">              

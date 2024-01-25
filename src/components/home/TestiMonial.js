@@ -1,8 +1,14 @@
+'use client'
+import { useInView } from "react-intersection-observer";
 import Markdown from "react-markdown";
 
-async function TestiMonial({client}) {    
+function TestiMonial({client}) {    
+  let options = {    
+    triggerOnce:true,
+  }
+  const { ref: myref, inView, entry } = useInView(options);   
   return (
-    <div className="max-w-screen-md mx-auto mx-auto mb-12 rounded-md bg-clip-padding p-10 bg-gray-400 border border-gray-100  flex backdrop-filter backdrop-blur-sm bg-opacity-10 flex-col items-center justify-center p-8 text-center shadow-gray-500 rounded-t-lg md:rounded-t-none md:rounded-ss-lg">
+    <div className={`${inView ? "team-details" : null} hover:scale-110 transition ease-in-out delay-100 duration-300 max-w-screen-md mx-auto mx-auto mb-12 rounded-md bg-clip-padding p-10 bg-gray-400 border border-gray-100  flex backdrop-filter backdrop-blur-sm bg-opacity-10 flex-col items-center justify-center p-8 text-center shadow-gray-500 rounded-t-lg md:rounded-t-none md:rounded-ss-lg`} ref={myref}>
         <figure className="text-start">
       <svg
         className="h-12 mx-auto mb-3 "

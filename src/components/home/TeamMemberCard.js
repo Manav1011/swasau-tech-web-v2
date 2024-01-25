@@ -1,9 +1,14 @@
 'use client'
 import Link from 'next/link'
+import { useInView } from "react-intersection-observer";
 function TeamMemberCard(props) {
+    let options = {        
+        triggerOnce:true,
+    }
+    const { ref: myref, inView, entry } = useInView(options);
     const {id,dp,name,designation,github,linkedin} = props     
   return (
-    <div className="mb-10 text-center text-gray-500 dark:text-gray-400">
+    <div className={`${inView ? "team-details" : null} hover:scale-110 transition ease-in-out delay-100 duration-300 mb-10 text-center text-gray-500 dark:text-gray-400`} ref={myref}>
         <Link href={`/team/${id}`} aria-current="page">
         <img className="mx-auto mb-3 w-36 h-36 rounded-full mix-blend-darken" src={dp} alt="Bonnie Avatar" />
         <h3 className="text-xl font-mono font-medium text-slate-900">
