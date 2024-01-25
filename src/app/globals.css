@@ -63,3 +63,10 @@
 .footer-bottom-up {
   animation: FooterDowntoTop 1s ease-out; /* Adjust the duration and easing as needed */  
 }
+
+#teammemberpage strong{
+  color: #0284c7;
+}
+#teammemberpage p{
+  color: #64748b;
+}

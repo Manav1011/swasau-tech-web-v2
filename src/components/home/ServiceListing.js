@@ -29,17 +29,18 @@ function ServiceListing() {
   const serviceContainer = useRef()
   let options = {
     threshold:0.1,
+    triggerOnce:true,
     rootMargin: '0px',    
   }  
   const { ref: myref, inView, entry } = useInView(options); 
   if(services){
     return (
-      <section className={`pt-20`} ref={myref} id='servicescontainer' style={{backgroundImage:"url('/images/backgrounds/6.36962145.jpeg')"}}>
+      <section className={`bg-opacity-100 pt-20`} ref={myref} id='servicescontainer'>
       <div>
-        <div className={`${inView?'services-zoom-in':null} container mx-auto`} ref={serviceContainer} style={{backgroundImage:`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`}}>
+        <div className={`${inView?'services-zoom-in':null} container mx-auto`} ref={serviceContainer}>
           <div className="flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">              
+              <div className="mx-auto mb-12 w-full sm:w-1/2 text-center lg:mb-20">              
                 <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-slate-900	 sm:text-4xl md:text-[40px]">
                   What We Offer
                 </h2>

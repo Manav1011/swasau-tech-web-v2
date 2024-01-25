@@ -1,6 +1,8 @@
 import MainGraphic from "@/components/home/MainGraphic";
 import dynamic_loading from "next/dynamic";
 import ServiceSkeleton from "@/skeletons/ServiceSkeleton";
+import ProjectsSection from "@/components/home/ProjectsSection";
+import Testimonials from "@/components/home/Testimonials";
 
 export const dynamic = 'force-dynamic'
 export default function Home() {
@@ -26,6 +28,8 @@ export default function Home() {
       <MainGraphic grad={gradient_arr[choosed_grad_index]}/>
       <ServiceListing/>
       <TeamSection/>
+      <ProjectsSection/>
+      <Testimonials/>
     </>
   );
 }

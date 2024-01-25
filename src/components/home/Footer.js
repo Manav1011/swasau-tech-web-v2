@@ -148,15 +148,15 @@ function Footer({grad}) {
                           </li>
   
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Web Design </a>
+                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Silicon & VLSI </a>
                           </li>
   
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Marketing </a>
+                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Internet Of Things </a>
                           </li>
   
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Google Ads </a>
+                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Embeded Systems </a>
                           </li>
                       </ul>
                       </div>
@@ -239,7 +239,7 @@ function Footer({grad}) {
                           <li
                           className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                           >
-                          <a className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end" target="_blank" href="https://maps.app.goo.gl/TrFbift6UhB1Ppcq7">
+                          <a className="" target="_blank" href="https://maps.app.goo.gl/TrFbift6UhB1Ppcq7">
                           <svg
                               xmlns="http://www.w3.org/2000/svg"
                               className="h-5 w-5 shrink-0 text-black-900"

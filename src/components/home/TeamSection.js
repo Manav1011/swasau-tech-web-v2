@@ -51,15 +51,16 @@ function TeamSection() {
       }
     },[])
   let options = {
-    threshold:0.1,    
+    threshold:0.1, 
+    triggerOnce:true,
   }
   const teammembersRef = useRef()
   const { ref: myref, inView, entry } = useInView(options);    
   if(members.CTO && members.CTO){
     return (        
-        <section className={`pt-5`} id="teamdetailscontainer" ref={myref} style={{backgroundImage:"url('/images/backgrounds/8.de377256.jpeg')"}} >
-          <div className={`${inView ? "team-details" : null} py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`} ref={teammembersRef} style={{backgroundImage:`url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`}}>
-            <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+        <section className={`pt-5`} id="teamdetailscontainer" ref={myref}  >
+          <div className={`${inView ? "team-details" : null} py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`} ref={teammembersRef}>
+            <div className="mx-auto mb-8 w-full sm:w-1/2 lg:mb-16">
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-slate-900	 sm:text-4xl md:text-[40px]">
                 Our team
               </h2>

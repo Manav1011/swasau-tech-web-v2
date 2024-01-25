@@ -1,5 +1,6 @@
 import UseAPI from "@/hooks/UseAPI"
 import Image from "next/image"
+import Markdown from "react-markdown"
 export default async function Page({ params }) {        
           const query = `query GetTeamMember($id: String!) {
             team(id: $id) {
@@ -24,8 +25,8 @@ export default async function Page({ params }) {
           const member = response.data.team
       
 return (
-        <>
-        {member ? <div className="bg-gray-100">
+        <section id='teammemberpage'>
+        {member ? <div>
              <div className="">
              {/* top content */}
              <div className="flex rounded-t-lg bg-top-color sm:px-2  mx-5">
@@ -89,16 +90,9 @@ return (
                      </h2>
                      <div className="border-2 w-20 border-top-color my-3" />
                      <div className="flex flex-col space-y-1">
-                        {member.educationBackground.map((education, index) => (
-                            <div className="flex flex-col" key={index}>
-                            <p className="text-sm font-medium">
-                                <span className="text-green-700">
-                                {education.degree}
-                                </span>
-                                , {education.institute}
-                            </p>
-                            </div>
-                        ))}
+                        <Markdown>
+                            {member.educationBackground}
+                        </Markdown>
                     </div>
                      </div>)}
                  </div>
@@ -118,16 +112,9 @@ return (
                      </h2>
                      <div className="border-2 w-20 border-top-color my-3" />
                      <div className="flex flex-col">
-                        {member.projects.map((project, index) => (
-                            <div className="flex flex-col" key={index}>
-                            <p className="text-lg font-semibold text-gray-700">
-                                {project.title}
-                            </p>
-                            <p className="font-normal text-sm text-gray-700 mb-1 pl-2">
-                                {project.desc}
-                            </p>
-                            </div>
-                        ))}
+                        <Markdown>
+                            {member.projects}
+                        </Markdown>
                     </div>
                      </div>)}
                  </div>
@@ -135,6 +122,6 @@ return (
              </div>
              </div>
          </div>  : null}
-        </>
+        </section>
     )
 }
