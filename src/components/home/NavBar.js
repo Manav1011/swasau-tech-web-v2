@@ -20,6 +20,7 @@ function NavBar() {
                 <Image
                   width={300}
                   height={192}
+                  priority={true}
                   className="h-auto w-48 mix-blend-darken"
                   src="/images/Logo/Swasau-Logo-black.png"
                   alt="Your Company"
