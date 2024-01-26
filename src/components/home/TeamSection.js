@@ -22,9 +22,9 @@ function TeamSection({ team }) {
     teamMembers: filteredTeam,
   };  
     return (
-      <section className={`pt-5`} id="teamdetailscontainer">
+      <section className={`pt-20`} id="teamdetailscontainer">
         <div
-          className={`py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`}
+          className={`px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`}
         >
           <div className="mx-auto mb-8 w-full sm:w-1/2 lg:mb-16">
             <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-slate-900	 sm:text-4xl md:text-[40px]">

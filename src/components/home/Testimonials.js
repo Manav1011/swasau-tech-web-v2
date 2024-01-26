@@ -3,8 +3,8 @@ import TestiMonial from "./TestiMonial"
 
 async function Testimonials({clients}) {  
   return (
-    <section className="pt-5 " id='clientssection'>
-        <div className="px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+    <section className="pt-20 " id='clientssection'>
+        <div className="px-4 mx-auto text-center lg:px-6">
             <div className="text-center w-full sm:w-1/2  mx-auto">
             <h2 className="mb-5 text-3xl font-bold leading-[1.2] text-slate-900	 sm:text-4xl md:text-[40px]">
                 Our Clients

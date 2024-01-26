@@ -6,6 +6,8 @@ import Testimonials from "@/components/home/Testimonials";
 import TeamSection from "../components/home/TeamSection";
 import UseAPI from "@/hooks/UseAPI";
 import { Suspense } from "react";
+import AboutUs from "@/components/home/AboutUs";
+import Founders from "@/components/home/Founders";
 
 
 export default async function Home() {
@@ -86,6 +88,8 @@ export default async function Home() {
         <TeamSection team={team.items}/>
         <ProjectsSection projects={projects.items}/>
         <Testimonials clients={clients.items}/>    
+        <Founders/>
+        <AboutUs/>
     </>
   );
 }

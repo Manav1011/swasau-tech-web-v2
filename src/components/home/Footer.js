@@ -1,3 +1,4 @@
+import Link from "next/link"
 function Footer({grad}) {
     return (
       <div>
@@ -17,7 +18,7 @@ function Footer({grad}) {
                       Swasau Technology is an engineering services company specializing in semiconductor and embedded design for Indian and global industries. As an R&D company, we deliver dream solutions for complex electronic projects, offering expertise in System Integration and Electronics Manufacturing.
                       </p>
   
-                      <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+                      {/* <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
                       <li>
                           <a
                           href="/"
@@ -105,11 +106,11 @@ function Footer({grad}) {
                           </svg>
                           </a>
                       </li>
-                      </ul>
+                      </ul> */}
                   </div>
   
-                  <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-                      <div className="text-center sm:text-left">
+                  <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
+                      {/* <div className="text-center sm:text-left">
                       <p className="text-lg font-medium text-black-900">About Us</p>
   
                       <ul className="mt-8 space-y-4 text-sm">
@@ -135,28 +136,28 @@ function Footer({grad}) {
                           <a className="text-black-700 transition hover:text-black-700/75" href="/"> Careers </a>
                           </li>
                       </ul>
-                      </div>
+                      </div> */}
   
                       <div className="text-center sm:text-left">
                       <p className="text-lg font-medium text-black-900">Our Services</p>
   
                       <ul className="mt-8 space-y-4 text-sm">
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/">
+                          <Link className="text-black-700 transition hover:text-black-700/75" href="#servicescontainer">
                               Web Development
-                          </a>
+                          </Link>
                           </li>
   
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Silicon & VLSI </a>
+                          <Link className="text-black-700 transition hover:text-black-700/75" href="#servicescontainer"> Silicon & VLSI </Link>
                           </li>
   
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Internet Of Things </a>
+                          <Link className="text-black-700 transition hover:text-black-700/75" href="#servicescontainer"> Internet Of Things </Link>
                           </li>
   
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Embeded Systems </a>
+                          <Link className="text-black-700 transition hover:text-black-700/75" href="#servicescontainer"> Embeded Systems </Link>
                           </li>
                       </ul>
                       </div>
@@ -166,20 +167,23 @@ function Footer({grad}) {
   
                       <ul className="mt-8 space-y-4 text-sm">
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> FAQs </a>
+                          <Link className="text-black-700 transition hover:text-black-700/75" href="#clientssection"> Clients </Link>
                           </li>
   
                           <li>
-                          <a className="text-black-700 transition hover:text-black-700/75" href="/"> Support </a>
+                          <Link className="text-black-700 transition hover:text-black-700/75" href="#servicescontainer"> Services </Link>
                           </li>
                           <li>
-                              <a className="text-black-700 transition hover:text-black-700/75" href="/"> Support </a>
+                              <Link className="text-black-700 transition hover:text-black-700/75" href="#teamdetailscontainer"> Team </Link>
                           </li>
                           <li>
-                              <a className="text-black-700 transition hover:text-black-700/75" href="/"> Support </a>
+                              <Link className="text-black-700 transition hover:text-black-700/75" href="#projectssection"> Projects </Link>
                           </li>
                           <li>
-                              <a className="text-black-700 transition hover:text-black-700/75" href="/"> Support </a>
+                              <Link className="text-black-700 transition hover:text-black-700/75" href="#aboutussection"> About Us </Link>
+                          </li>
+                          <li>
+                              <Link className="text-black-700 transition hover:text-black-700/75" href="#fouderssection"> Founders </Link>
                           </li>
                       </ul>
                       </div>
@@ -191,7 +195,7 @@ function Footer({grad}) {
                           <li>
                           <a
                               className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                              href="/"
+                              href="mailto:info@swasau.com"
                           >
                               <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +211,6 @@ function Footer({grad}) {
                                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                               />
                               </svg>
-  
                               <span className="flex-1 text-black-700">info@swasau.com</span>
                           </a>
                           </li>
@@ -215,7 +218,7 @@ function Footer({grad}) {
                           <li>
                           <a
                               className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                              href="/"
+                              href="tel:+919426404816"
                           >
                               <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -237,9 +240,9 @@ function Footer({grad}) {
                           </li>
   
                           <li
-                          className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                          className=""
                           >
-                          <a className="" target="_blank" href="https://maps.app.goo.gl/TrFbift6UhB1Ppcq7">
+                          <a className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end" target="_blank" href="https://maps.app.goo.gl/TrFbift6UhB1Ppcq7">
                           <svg
                               xmlns="http://www.w3.org/2000/svg"
                               className="h-5 w-5 shrink-0 text-black-900"

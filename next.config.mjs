@@ -10,6 +10,11 @@ const nextConfig = {
             hostname: 'images.ctfassets.net',
             port: '',
             },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+                port: '',
+            },
         ],
     }
 };

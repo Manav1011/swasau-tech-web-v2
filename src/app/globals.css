@@ -48,3 +48,16 @@
 .right-left {
   animation: TeamMemberRightLeft 1s ease-out; /* Adjust the duration and easing as needed */  
 }
+
+@keyframes ZoomOut {
+  0% {
+    transform: scale(0);    
+  }
+  100% {
+    transform: translatex(1);    
+  }
+}
+
+.zoom-out{
+  animation: ZoomOut 1s ease-out;
+}

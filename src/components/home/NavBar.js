@@ -32,7 +32,8 @@ function NavBar() {
                   <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#clientssection">Clients</Link>
                   <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#servicescontainer">Services</Link>
                   <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#teamdetailscontainer">Team</Link>
-                  <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#projectssection">Projects</Link>                
+                  <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#projectssection">Projects</Link>
+                  <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#aboutussection">About us</Link>
                 <Link
                   href="/contact-us"
                   className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
@@ -51,7 +52,8 @@ function NavBar() {
           <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#clientssection">Clients</Link>
           <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#servicescontainer">Services</Link>
           <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#teamdetailscontainer">Team</Link>
-          <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#projectssection">Projects</Link>        
+          <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#projectssection">Projects</Link>
+          <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#aboutussection">About us</Link>
           <Link
             href="/contact-us"
             className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
