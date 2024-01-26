@@ -1,17 +1,6 @@
 import ProjectComponent from "./ProjectComponent"
-import UseAPI from "@/hooks/UseAPI"
 
-async function ProjectsSection() {
-    const query = `query {
-        projectsCollection{
-          items{
-            title
-            description
-          }
-        }
-      }`      
-      const response = await UseAPI(query)      
-      const projects = response.data.projectsCollection.items
+async function ProjectsSection({projects}) {
   return (
     <section className="pt-20" id='projectssection'>
     <div className="">

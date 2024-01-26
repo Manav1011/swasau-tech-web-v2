@@ -2,71 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.loader-in-out {
-  animation: fadeInOut 2s ease-in-out infinite;
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.team-details {
-  animation: slideInRight 1s ease-out; /* Adjust the duration and timing function as needed */
-}
-
-
-@keyframes slideInLeft {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-.services-zoom-in {
-  animation: slideInLeft 1s ease-out; /* Adjust the duration and easing as needed */  
-}
-
-@keyframes FooterDowntoTop {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-.footer-bottom-up {
-  animation: FooterDowntoTop 1s ease-out; /* Adjust the duration and easing as needed */  
-}
 
 #teammemberpage strong{
   color: #0284c7;
 }
 #teammemberpage p{
   color: #64748b;
+}
+
+@keyframes BottomUp {
+  from {
+    transform: translateY(100%);    
+  }
+  to {
+    transform: translateY(0%);    
+  }
+}
+
+.bottom-up {
+  animation: BottomUp 1s ease-out; /* Adjust the duration and easing as needed */  
+}
+
+@keyframes servicesLeftRight {
+  from {
+    transform: translatex(-100%);    
+  }
+  to {
+    transform: translatex(0%);    
+  }
+}
+
+.left-right {
+  animation: servicesLeftRight 1s ease-out; /* Adjust the duration and easing as needed */  
+}
+
+@keyframes TeamMemberRightLeft {
+  from {
+    transform: translatex(100%);    
+  }
+  to {
+    transform: translatex(0%);    
+  }
+}
+
+.right-left {
+  animation: TeamMemberRightLeft 1s ease-out; /* Adjust the duration and easing as needed */  
 }

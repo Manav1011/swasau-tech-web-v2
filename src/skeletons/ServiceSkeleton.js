@@ -1,36 +1,72 @@
 'use client'
 function ServiceSkeleton() {
   return (    
-    <>        
-        <div className="container justify-center items-center flex flex-wrap">            
-            <CardSkeleton/>
-            <CardSkeleton/>
-            <CardSkeleton/>
-            <CardSkeleton/>
-            <CardSkeleton/>
-            <CardSkeleton/>
-            <CardSkeleton/>
+    <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto animate-pulse">
+            <h1 class="w-48 h-2 mx-auto bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+
+            <p class="w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+            <p class="w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg sm:w-80 dark:bg-gray-700"></p>
+
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
+                <div class="w-full ">
+                    <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                    
+                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                </div>
+
+                <div class="w-full ">
+                    <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                    
+                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                </div>
+
+                <div class="w-full ">
+                    <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                    
+                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                </div>
+
+                <div class="w-full ">
+                    <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                    
+                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                </div>
+
+                <div class="w-full ">
+                    <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                    
+                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                </div>
+
+                <div class="w-full ">
+                    <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                    
+                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                </div>
+
+                <div class="w-full ">
+                    <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                    
+                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                </div>
+
+                <div class="w-full ">
+                    <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
+                    
+                    <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
+                    <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
+                </div>
+            </div>
         </div>
-    </>
+    </section>
   )
 }
-
-const CardSkeleton = () => {
-    return (
-        <>
-            <div
-                className="backdrop-blur-sm animate-pulse bg-opacity-10 rounded-md bg-clip-padding p-10 bg-gray-400 hover:scale-110 transition ease-in-out delay-100 duration-300 relative sm:m-10 m-5 grid h-[15rem] w-full max-w-[15rem] flex-col items-end justify-center overflow-hidden rounded-xl  bg-clip-border text-center text-gray-700">
-                <div
-                className="">
-                <div className=""></div>
-                </div>
-                <div className="relative mb-6 px-2">
-                <h5 className="block font-sans text-lg antialiased font-semibold leading-snug tracking-normal text-white" style={{fontFamily:'Azonix'}}>                    
-                </h5>              
-                </div>
-            </div> 
-        </>
-    )
-}
-
 export default ServiceSkeleton

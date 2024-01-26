@@ -1,6 +1,8 @@
 import UseAPI from "@/hooks/UseAPI"
 import Image from "next/image"
+import { Suspense } from "react"
 import Markdown from "react-markdown"
+import ServiceSkeleton from "@/skeletons/ServiceSkeleton"
 export default async function Page({ params }) {        
           const query = `query GetTeamMember($id: String!) {
             team(id: $id) {
@@ -26,6 +28,7 @@ export default async function Page({ params }) {
       
 return (
         <section id='teammemberpage'>
+        <Suspense fallback={<ServiceSkeleton/>}>
         {member ? <div>
              <div className="">
              {/* top content */}
@@ -122,6 +125,7 @@ return (
              </div>
              </div>
          </div>  : null}
+         </Suspense>
         </section>
     )
 }

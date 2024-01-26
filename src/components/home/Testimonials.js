@@ -1,18 +1,7 @@
 import UseAPI from "@/hooks/UseAPI"
 import TestiMonial from "./TestiMonial"
 
-async function Testimonials() {
-    const query = `query {
-        clientsCollection{
-          items{
-            companyName
-            description
-            siteLink
-          }
-        }
-      }`      
-      const response = await UseAPI(query)      
-      const clients = response.data.clientsCollection.items
+async function Testimonials({clients}) {  
   return (
     <section className="pt-5 " id='clientssection'>
         <div className="px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">

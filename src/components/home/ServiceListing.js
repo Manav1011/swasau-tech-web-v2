@@ -1,31 +1,6 @@
-'use client'
 import ServiceCard from "./ServiceCard";
-import UseAPI from "@/hooks/UseAPI";
-import { useEffect, useRef, useState } from 'react';
 
-function ServiceListing() {
-  const [services,setServices] = useState()
-  useEffect(() => {
-    if(!services){
-      const query = `query {
-        servicesCollection{
-          items{
-            sys{
-              id
-            }
-            title
-            image{
-              url
-            }
-          }
-        }
-      }`
-      UseAPI(query).then(res => {        
-        setServices(res.data.servicesCollection.items)        
-      })
-    }
-  },[])
-  // const serviceContainer = useRef()
+function ServiceListing({services}) {      
   if(services){
     return (
       <section className={`bg-opacity-100 pt-20`} id='servicescontainer'>
