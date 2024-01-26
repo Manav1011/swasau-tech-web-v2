@@ -8,7 +8,7 @@ function ClientButton(props) {
   }
     return (
       <>
-      {path == '/' || title=='Contact Us' ? <button className={classlist} onClick={() => scrollElementToView(id)}>{title}</button> :null}
+      {path == '/' || title=='Contact Us' ? <Link className={classlist} href={`#${id}`}>{title}</Link> :null}
       </>
     )
 }

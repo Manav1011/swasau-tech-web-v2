@@ -7,8 +7,7 @@ import { useForm } from "react-hook-form";
 import { useGlobalState } from "@/context/GlobalStateProvider";
 function GetAQUote() {  
     const { register, handleSubmit } = useForm();
-    const { updateShowLogoLoader } = useGlobalState();
-    updateShowLogoLoader(true);
+    const { updateShowLogoLoader } = useGlobalState();    
     const handleFormSubmit = (data) => {
         updateShowLogoLoader(true);
         axios.post('/contact-us/get-a-quote/send-mail', {

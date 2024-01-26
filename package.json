@@ -12,6 +12,7 @@
     "axios": "^1.6.5",
     "next": "14.1.0",
     "nextjs-progressbar": "^0.0.16",
+    "nextjs-toploader": "^1.6.4",
     "nodemailer": "^6.9.8",
     "nprogress": "^0.2.0",
     "react": "^18",
