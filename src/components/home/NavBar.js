@@ -22,7 +22,7 @@ function NavBar() {
                   height={192}
                   priority={true}
                   className="h-auto w-48 mix-blend-darken"
-                  src="/images/Logo/Swasau-Logo-black.png"
+                  src="/images/Logo/Swasau-Logo-png.png"
                   alt="Your Company"
                 />
               </Link>
