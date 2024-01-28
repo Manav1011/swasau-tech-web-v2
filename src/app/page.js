@@ -5,7 +5,6 @@ import ProjectsSection from "@/components/home/ProjectsSection";
 import Testimonials from "@/components/home/Testimonials";
 import TeamSection from "../components/home/TeamSection";
 import UseAPI from "@/hooks/UseAPI";
-import { Suspense } from "react";
 import AboutUs from "@/components/home/AboutUs";
 import Founders from "@/components/home/Founders";
 
@@ -56,10 +55,12 @@ export default async function Home() {
   }`
   const response = async () => { const res = await UseAPI(query); return res.data }
   const query_response = await response()
-  const projects = query_response.projects
-  const clients = query_response.clients
-  const team = query_response.team
-  const services = query_response.services
+  if(query_response){
+    var projects = query_response.projects
+    var clients = query_response.clients
+    var team = query_response.team
+    var services = query_response.services
+  }
 
   // const ServiceListing = dynamic_loading(() => import("@/components/home/ServiceListing"), {
   //   suspense: true,
@@ -84,10 +85,10 @@ export default async function Home() {
   return (
     <>
         <MainGraphic/>      
-        <ServiceListing services={services.items}/>      
-        <TeamSection team={team.items}/>
-        <ProjectsSection projects={projects.items}/>
-        <Testimonials clients={clients.items}/>    
+        {services && <ServiceListing services={services.items}/>} 
+        {team && <TeamSection team={team.items}/>}
+        {projects  && <ProjectsSection projects={projects.items}/>}
+        {clients && <Testimonials clients={clients.items}/>}
         <Founders/>
         <AboutUs/>
     </>
