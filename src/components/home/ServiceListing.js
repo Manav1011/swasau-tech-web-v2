@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 function ServiceListing({services}) {      
   if(services){
     return (
-      <section className={`bg-opacity-100 pt-20`} id='servicescontainer'>
+      <section className={`bg-opacity-100 pt-20 overflow-x-hidden	`} id='servicescontainer'>
       <div>
         <div className={`container mx-auto`}>
           <div className="flex flex-wrap">
