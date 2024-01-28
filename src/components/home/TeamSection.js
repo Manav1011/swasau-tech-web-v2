@@ -22,7 +22,7 @@ function TeamSection({ team }) {
     teamMembers: filteredTeam,
   };  
     return (
-      <section className={`pt-20 overflow-x-hidden`} id="teamdetailscontainer">
+      <section className={`pt-20 overflow-hidden`} id="teamdetailscontainer">
         <div
           className={`px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6`}
         >
