@@ -55,7 +55,7 @@ function TeamSection({ team }) {
               linkedin={members.CTO.linkedin}
             />}
           </div>
-          <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="flex items-center justify-center flex-wrap">
             {members.teamMembers && members.teamMembers.map((item, index) => (
               <TeamMemberCard
                 key={index}
