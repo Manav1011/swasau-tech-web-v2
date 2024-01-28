@@ -1,4 +1,3 @@
-import axios from "axios";
 async function UseAPI(query, variables) {
     let res = {
       error: false,

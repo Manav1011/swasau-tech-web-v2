@@ -2,6 +2,7 @@ import Image from "next/image";
 import NavButton from '../../components/NavBar/NavButtons';
 import ToggleNavButton from '../../components/NavBar/ToggleNavButton';
 import Link from "next/link";
+import NavLink from "./NavLink";
 
 function NavBar() {
   return (
@@ -29,11 +30,11 @@ function NavBar() {
             </div>
             <div className="hidden sm:ml-6 sm:flex items-center">
               <div className="flex space-x-4">
-                  <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#clientssection">Clients</Link>
-                  <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#servicescontainer">Services</Link>
-                  <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#teamdetailscontainer">Team</Link>
-                  <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#projectssection">Projects</Link>
-                  <Link className="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#aboutussection">About us</Link>
+                  <NavLink classList={"text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"} id={"clientssection"} title={'Clients'}/>
+                  <NavLink classList="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="servicescontainer" title="Services" />
+                  <NavLink classList="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="teamdetailscontainer" title="Team" />
+                  <NavLink classList="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="projectssection" title="Projects" />
+                  <NavLink classList="text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="aboutussection" title="About us" />
                 <Link
                   href="/contact-us"
                   className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
@@ -49,11 +50,11 @@ function NavBar() {
       {/* Mobile menu, show/hide based on menu state. */}
       <div className="sm:hidden hidden" id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#clientssection">Clients</Link>
-          <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#servicescontainer">Services</Link>
-          <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#teamdetailscontainer">Team</Link>
-          <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#projectssection">Projects</Link>
-          <Link className="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="#aboutussection">About us</Link>
+          <NavLink classList="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="clientssection" title="Clients" />
+          <NavLink classList="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="servicescontainer" title="Services" />
+          <NavLink classList="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="teamdetailscontainer" title="Team" />
+          <NavLink classList="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="projectssection" title="Projects" />
+          <NavLink classList="block text-zinc-950 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" id="aboutussection" title="About us" />
           <Link
             href="/contact-us"
             className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
