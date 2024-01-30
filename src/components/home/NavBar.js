@@ -7,8 +7,8 @@ import NavLink from "./NavLink";
 function NavBar() {
   return (
     <nav
-      className="w-full absolute top-0 z-10 bg-opacity-30"
-      style={{ fontFamily: "dosislight", background: 'transparent', 'backdropFilter': 'blur(5px)' }}
+      className="w-full fixed top-0 z-10 sm:bg-transparent"
+      style={{ fontFamily: "dosislight", 'backdropFilter': 'blur(5px)' }}
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-20 items-center justify-between">

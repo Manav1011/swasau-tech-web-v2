@@ -44,7 +44,7 @@ function GetInTouch() {
     });
   };
   return (
-    <div className="pt-5 px-4 mx-auto lg:w-2/3">
+    <div className="mt-20 mb-20 px-4 mx-auto lg:w-2/3">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-500">
         Let's Connect
       </h2>

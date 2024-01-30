@@ -1,6 +1,7 @@
 'use client'
 function ToggleNavButton() {    
     const toggleMenuMobile = () => {
+      document.getElementsByTagName('nav')[0].classList.toggle('bg-slate-200');
         document.getElementById("mobile-menu").classList.toggle("hidden");
     };
     return (
