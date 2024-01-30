@@ -3,7 +3,7 @@ async function MainGraphic() {
   return (
     <div className="bg-center" style={{ height: 'calc(100vh)', backgroundImage: `url('/images/backgrounds/blackshade.jpg')`, backgroundRepeat:'no-repeat'}}>
       <div className="h-full flex justify-center sm:items-center text-center">
-          <div className='mt-24 sm:-mt-32'>
+          <div className='mt-44 sm:-mt-32'>
             <h1 className="block w-50 text-slate-900 text-4xl leading-10 sm:leading-1 sm:text-6xl font-bold" style={{fontFamily:'Azonix'}}>creating dream sollutions</h1>
             <div className="font-semibold	sm:font-normal mt-3 text-orange-500 text-2xl sm:text-4xl lg:text-6xl" style={{fontFamily:'dosislight'}}>
                 turning ideas into reality
