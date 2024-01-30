@@ -86,10 +86,10 @@ export default async function Home() {
     <>
         <MainGraphic/>      
         {services && <ServiceListing services={services.items}/>} 
-        {team && <TeamSection team={team.items}/>}
         {projects  && <ProjectsSection projects={projects.items}/>}
         {clients && <Testimonials clients={clients.items}/>}
         <Founders/>
+        {team && <TeamSection team={team.items}/>}
         <AboutUs/>
     </>
   );

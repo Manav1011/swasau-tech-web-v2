@@ -1,26 +1,26 @@
 import TeamMemberCard from "./TeamMemberCard";
 
-function TeamSection({ team }) {
-  let ceo = null;
-  let cto = null;
-  // Filter out 'CEO' and 'CTO' elements
-  const filteredTeam = team.filter(
-    (member) => {
-      if (member.designation === "CEO") {
-        ceo = member;
-        return false;
-      } else if (member.designation === "CTO") {
-        cto = member;
-        return false;
-      }
-      return true;
-    }
-  );
-  const members = {
-    CEO: ceo,
-    CTO: cto,
-    teamMembers: filteredTeam,
-  };  
+function TeamSection({ team }) {  
+  // let ceo = null;
+  // let cto = null;
+  // // Filter out 'CEO' and 'CTO' elements
+  // const filteredTeam = team.filter(
+  //   (member) => {
+  //     if (member.designation === "CEO") {
+  //       ceo = member;
+  //       return false;
+  //     } else if (member.designation === "CTO") {
+  //       cto = member;
+  //       return false;
+  //     }
+  //     return true;
+  //   }
+  // );
+  // const members = {
+  //   CEO: ceo,
+  //   CTO: cto,
+  //   teamMembers: filteredTeam,
+  // };  
     return (
       <section className={`pt-20 overflow-hidden`} id="teamdetailscontainer">
         <div
@@ -37,7 +37,7 @@ function TeamSection({ team }) {
               reality.
             </p>
           </div>
-          <div className="flex flex-wrap justify-evenly">
+          {/* <div className="flex flex-wrap justify-evenly">
           {members.CEO && <TeamMemberCard
               id={members.CEO.sys.id}
               dp={members.CEO.displayPicture.url}
@@ -54,9 +54,9 @@ function TeamSection({ team }) {
               github={members.CTO.github}
               linkedin={members.CTO.linkedin}
             />}
-          </div>
+          </div> */}
           <div className="flex items-center justify-center flex-wrap">
-            {members.teamMembers && members.teamMembers.map((item, index) => (
+            {team && team.map((item, index) => (
               <TeamMemberCard
                 key={index}
                 id={item.sys.id}
