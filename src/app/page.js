@@ -16,6 +16,7 @@ export default async function Home() {
         companyName
         description
         siteLink
+        order
       }
     }
     
@@ -35,6 +36,7 @@ export default async function Home() {
         image {
           url
         }
+        order
       }
     }
     
@@ -56,10 +58,12 @@ export default async function Home() {
   const response = async () => { const res = await UseAPI(query); return res.data }
   const query_response = await response()
   if(query_response){
+    query_response.services.items.sort((a, b) => a.order - b.order);
+    query_response.clients.items.sort((a, b) => a.order - b.order);    
     var projects = query_response.projects
     var clients = query_response.clients
     var team = query_response.team
-    var services = query_response.services
+    var services = query_response.services    
   }
 
   // const ServiceListing = dynamic_loading(() => import("@/components/home/ServiceListing"), {

@@ -18,6 +18,9 @@
     transform: translateY(0%);    
   }
 }
+body::-webkit-scrollbar {
+  width: 0em;
+}
 
 .bottom-up {
   animation: BottomUp 1s ease-out; /* Adjust the duration and easing as needed */  

@@ -9,12 +9,12 @@ function TeamMemberCard(props) {
     const {id,dp,name,designation,github,linkedin} = props     
   return (
     <div className={`${inView ? "bottom-up" : 'translate-y-full'} w-full sm:w-1/2 md:w-1/3 lg:w-1/4 hover:scale-110 transition ease-in-out delay-100 duration-300 mb-10 text-center text-gray-500 dark:text-gray-400`} ref={myref}>
-        <Link href={`/team/${id}`} aria-current="page">
+        {/* <Link href={`/team/${id}`} aria-current="page"> */}
         <img className="mx-auto mb-3 w-36 h-36 rounded-full mix-blend-darken" src={dp} alt="Bonnie Avatar" />
         <h3 className="text-xl font-mono font-medium text-slate-900">
             {name}
         </h3>
-        </Link>
+        {/* </Link> */}
         <p className='text-slate-500 mb-2'>{designation}</p>
         <ul className="flex justify-center mt-1 space-x-4">
         {linkedin ? (<li>
@@ -28,6 +28,25 @@ function TeamMemberCard(props) {
                 </a>
             </li>): null}
         </ul>
+        <div className="mt-3 text-sm font-light text-gray-500 dark:text-gray-400">
+            <Link href={`/team/${id}`} aria-current="page" className="inline-flex items-center text-blue-600 hover:underline">
+                More about {name}
+              <svg
+                className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+                />
+              </svg>
+            </Link>
+          </div>
     </div>
   )
 }
