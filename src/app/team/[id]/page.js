@@ -27,7 +27,7 @@ export default async function Page({ params }) {
           const member = response.data.team
       
 return (
-        <section id='teammemberpage'>
+        <section className="mt-10" id='teammemberpage'>
         <Suspense fallback={<ServiceSkeleton/>}>
         {member ? <div>
              <div className="">
