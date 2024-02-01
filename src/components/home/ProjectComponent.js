@@ -8,7 +8,7 @@ function ProjectComponent({project}) {
   }
   const { ref: myref, inView, entry } = useInView(options);    
   return (
-    <figure  className={`${inView ? "bottom-up" : null} hover:scale-110 transition ease-in-out delay-100 duration-300 m-5 shadow-gray-900	rounded-md bg-clip-padding p-10 bg-gray-400 border border-gray-100  flex backdrop-filter backdrop-blur-sm bg-opacity-20 flex-col items-center justify-center p-8 text-center shadow-gray-500 rounded-t-lg md:rounded-t-none md:rounded-ss-lg`}  ref={myref} > 
+    <figure  className={`${inView ? "bottom-up" : null} hover:scale-110 transition ease-in-out delay-100 duration-300 m-5 shadow-gray-900	rounded-md bg-clip-padding p-10 bg-gray-400 border border-gray-100  flex backdrop-filter backdrop-blur-sm bg-opacity-20 flex-col items-center justify-center p-8 text-center shadow-gray-500 rounded-t-lg md:rounded-t-none md:rounded-ss-lg w-full lg:w-5/12`}  ref={myref} > 
     <h5 className="mb-2 text-2xl font-semibold tracking-tight text-slate-900">{project.title}</h5>    
     <Markdown className="mb-3 font-normal text-gray-500 dark:text-gray-400">{project.description}</Markdown>    
     <Link href="/contact-us" className="inline-flex items-center text-blue-600 hover:underline">

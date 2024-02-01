@@ -16,7 +16,7 @@ async function ProjectsSection({projects}) {
                 </div>
                 </div>
         </div>
-        <div className="mx-5 sm:mx-20 grid rounded-lg shadow-sm md:mb-12 md:grid-cols-2">
+        <div className="flex flex-wrap justify-center">
         {projects && 
             projects.map((project,index) => (
                 <ProjectComponent project={project} key={index}/>

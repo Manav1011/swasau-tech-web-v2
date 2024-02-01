@@ -1,5 +1,4 @@
 import MainGraphic from "@/components/home/MainGraphic";
-import ServiceSkeleton from "@/skeletons/ServiceSkeleton";
 import ServiceListing from "@/components/home/ServiceListing";
 import ProjectsSection from "@/components/home/ProjectsSection";
 import Testimonials from "@/components/home/Testimonials";
@@ -65,27 +64,6 @@ export default async function Home() {
     var team = query_response.team
     var services = query_response.services    
   }
-
-  // const ServiceListing = dynamic_loading(() => import("@/components/home/ServiceListing"), {
-  //   suspense: true,
-  //   ssr:false,
-  //   loading: () => <ServiceSkeleton/>
-  // });
-  // const TeamSection = dynamic_loading(() => import("../components/home/TeamSection"), {
-  //   suspense: true,
-  //   ssr:false,
-  //   loading: () => <ServiceSkeleton/>
-  // });
-  // const ProjectsSection = dynamic_loading(() => import("@/components/home/ProjectsSection"), {
-  //   suspense: true,
-  //   ssr:false,
-  //   loading: () => <ServiceSkeleton/>
-  // });
-  // const Testimonials = dynamic_loading(() => import("@/components/home/Testimonials"), {
-  //   suspense: true,
-  //   ssr:false,
-  //   loading: () => <ServiceSkeleton/>
-  // });
   return (
     <>
         <MainGraphic/>      
