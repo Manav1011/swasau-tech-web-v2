@@ -11,7 +11,7 @@ async function ProjectsSection({projects}) {
                     Our Recent Work
                     </h2>
                     <p className="text-slate-600 font-light sm:text-xl">
-                        Discover the embodiment of innovation through Swasau Technologies' recent works. From cutting-edge web applications to intricate embedded systems, each endeavor reflects our commitment to excellence and client satisfaction.
+                        Discover the embodiment of innovation through Swasau Technology Pvt Ltd's recent works. From cutting-edge web applications to intricate embedded systems, each endeavor reflects our commitment to excellence and client satisfaction.
                     </p>
                 </div>
                 </div>

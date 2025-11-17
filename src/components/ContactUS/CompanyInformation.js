@@ -9,7 +9,7 @@ function CompanyInformation() {
                 </svg>
             </div>
             <span htmlFor="message" className="block mb-2 text-lg font-medium text-gray-900">Company Information</span>
-            <span htmlFor="message" className="block mb-2 text-sm font-medium text-gray-500">Swasau Technology</span>
+            <span htmlFor="message" className="block mb-2 text-sm font-medium text-gray-500">Swasau Technology Pvt Ltd</span>
         </div>
         <div className="text-center flex flex-col mt-10">
             <div className="text-center mb-2 bg-slate-400 text-center text-gray-200 mx-auto rounded-lg p-3">
@@ -20,6 +20,7 @@ function CompanyInformation() {
             <span htmlFor="message" className="block mb-2 text-lg font-medium text-gray-900">Address</span>
             <span htmlFor="message" className="block mb-2 text-sm font-medium text-gray-500">D/2, Natubhai Appartment, Opp. Motinagar  Society, Near Jogers park, Iswarbhuvan, Navarangpura Ahmedabad Gujarat 380014</span>
             <span className="block mb-2 text-sm font-medium text-gray-900">Find on <a target="_blank" href="https://maps.app.goo.gl/TrFbift6UhB1Ppcq7"><img className="inline" src="/images/Logo/Google_Maps_Logo_2020.svg" width="32" height="32"></img></a></span>
+            <span htmlFor="message" className="block mb-2 text-sm font-medium text-gray-500">GSTIN: 24ABRCS2258K1ZU</span>
         </div>
         <div className="text-center flex flex-col mt-10">
             <div className="text-center mb-2 bg-slate-400 text-center text-gray-200 mx-auto rounded-lg p-3">

@@ -33,7 +33,7 @@ function AboutUs() {
                     <div className="ml-4 text-xl">Innovation Hub</div>
                 </div>
                 <p className="leading-loose text-gray-500">
-                    Swasau Technologies is not just a service provider; we're an innovation hub. Our team of skilled professionals thrives on pushing the boundaries of what's possible, delivering solutions that stand out in today's fast-evolving digital landscape.
+                    Swasau Technology Pvt Ltd is not just a service provider; we're an innovation hub. Our team of skilled professionals thrives on pushing the boundaries of what's possible, delivering solutions that stand out in today's fast-evolving digital landscape.
                 </p>
                 </div>
                 <div className="w-full hover:scale-110 transition ease-in-out delay-100 duration-300 border-b md:w-1/2 lg:w-1/3 lg:border-r p-8">
@@ -87,7 +87,7 @@ function AboutUs() {
                     <div className="ml-4 text-xl">Mission</div>
                 </div>
                 <p className="leading-loose text-gray-500">
-                    At Swasau Technology, our mission is to become a global leader in electronic Research and Development (R&D), dedicated to providing dream and innovative technological solutions. We are committed to pushing the boundaries of electronic design to create transformative solutions for diverse industries.
+                    At Swasau Technology Pvt Ltd, our mission is to become a global leader in electronic Research and Development (R&D), dedicated to providing dream and innovative technological solutions. We are committed to pushing the boundaries of electronic design to create transformative solutions for diverse industries.
                 </p>
                 </div>
                 <div className="w-full hover:scale-110 transition ease-in-out delay-100 duration-300 md:w-1/2 lg:w-1/3 p-8">
@@ -105,7 +105,7 @@ function AboutUs() {
                     <div className="ml-4 text-xl">Vision</div>
                 </div>
                 <p className="leading-loose text-gray-500">
-                    Our vision at Swasau Technology is to accelerate the Make in India initiative by offering cutting-edge electronic design solutions to both domestic and global industries. We aspire to be at the forefront of technological advancements, contributing to the growth and competitiveness of the electronics sector.
+                    Our vision at Swasau Technology Pvt Ltd is to accelerate the Make in India initiative by offering cutting-edge electronic design solutions to both domestic and global industries. We aspire to be at the forefront of technological advancements, contributing to the growth and competitiveness of the electronics sector.
                 </p>
                 </div>
                 <div className="w-full hover:scale-110 transition ease-in-out delay-100 duration-300 border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8">

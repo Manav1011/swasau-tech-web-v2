@@ -11,7 +11,7 @@ function Founders() {
             <FounderComponent DP={'/images/Founders/CEO.jpg'} NAME='Kiran Shah' DESIGNATION={'CEO & Co-Founder'} DESC={
     <>
       Completed Diploma Commercial Practice from Government Girls Polytechnic, Ahmedabad in 1990
-      and B.Com from Gujarat University in 1992. <br/><br/>As the co-founder of Swasau Technology,
+      and B.Com from Gujarat University in 1992. <br/><br/>As the co-founder of Swasau Technology Pvt Ltd,
       brings a unique blend of creativity, strategic thinking, and a deep understanding
       of market dynamics. Her entrepreneurial spirit is evident in every aspect of her work,
       from developing groundbreaking solutions to fostering a culture of innovation within the organization

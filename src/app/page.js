@@ -7,7 +7,6 @@ import UseAPI from "@/hooks/UseAPI";
 import AboutUs from "@/components/home/AboutUs";
 import Founders from "@/components/home/Founders";
 
-
 export default async function Home() {
   const query = `query {
     clients: clientsCollection {

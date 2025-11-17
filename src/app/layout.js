@@ -7,8 +7,8 @@ import LogoLoader from "@/components/Loaders/LogoLoader";
 import NextTopLoader from 'nextjs-toploader';
 
 export const metadata = {
-  title: "Swasau Tech",
-  description: "Swasau Technologies, your gateway to innovative solutions and digital transformation. At Swasau, we empower individuals and businesses to turn their dreams into reality through cutting-edge technology and personalized solutions. Our team is dedicated to crafting bespoke, user-centric experiences that elevate your digital presence and drive success. Discover the power of tailored solutions with Swasau Technologies - where innovation meets your aspirations",
+  title: "Swasau Technology Pvt Ltd",
+  description: "Swasau Technology Pvt Ltd is your gateway to innovative solutions and digital transformation. At Swasau Technology Pvt Ltd, we empower individuals and businesses to turn their dreams into reality through cutting-edge technology and personalized solutions. Our team is dedicated to crafting bespoke, user-centric experiences that elevate your digital presence and drive success. Discover the power of tailored solutions with Swasau Technology Pvt Ltd - where innovation meets your aspirations",
 };
 
 export default function RootLayout({ children }) {  

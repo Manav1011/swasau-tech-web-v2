@@ -13,7 +13,7 @@ function ServiceListing({services}) {
                   What We Offer
                 </h2>
                 <p className="text-slate-600 font-light sm:text-xl">
-                Discover a world of possibilities with Swasau Technologies. We offer a diverse range of cutting-edge services designed to elevate your digital presence and empower your business.
+                Discover a world of possibilities with Swasau Technology Pvt Ltd. We offer a diverse range of cutting-edge services designed to elevate your digital presence and empower your business.
                 </p>
               </div>
             </div>

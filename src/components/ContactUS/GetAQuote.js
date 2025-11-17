@@ -47,6 +47,9 @@ function GetAQUote() {
         <div className="pt-5 px-4 mx-auto lg:w-2/3">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-500">Get A Quote</h2>
             <p className="mb-8 lg:mb-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Ready to take the next step? Request a personalized quote today. Our team will provide you with a detailed estimate tailored to your project requirements.</p>
+            <p className="mb-6 text-center text-sm text-gray-500">
+                GSTIN: 24ABRCS2258K1ZU
+            </p>
             <form action="#" className="space-y-3" onSubmit={handleSubmit(handleFormSubmit)}>
                 <div className="sm:flex w-full">
                     <div className="sm:w-1/2 sm:me-2">

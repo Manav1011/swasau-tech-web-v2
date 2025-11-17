@@ -15,7 +15,7 @@ function Footer({grad}) {
                       </div>
   
                       <p className="mt-6 max-w-md text-center leading-relaxed text-black-500 sm:max-w-xs sm:text-left">
-                      Swasau Technology is an engineering services company specializing in semiconductor and embedded design for Indian and global industries. As an R&D company, we deliver dream solutions for complex electronic projects, offering expertise in System Integration and Electronics Manufacturing.
+                      Swasau Technology Pvt Ltd is an engineering services company specializing in semiconductor and embedded design for Indian and global industries. As an R&D company, we deliver dream solutions for complex electronic projects, offering expertise in System Integration and Electronics Manufacturing.
                       </p>
   
                       {/* <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
@@ -239,6 +239,27 @@ function Footer({grad}) {
                           </a>
                           </li>
   
+                      <li>
+                      <div className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
+                          <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5 shrink-0 text-black-900"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          >
+                          <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M4 7h16M4 12h16M4 17h16"
+                          />
+                          </svg>
+
+                          <span className="flex-1 text-black-700">GSTIN: 24ABRCS2258K1ZU</span>
+                      </div>
+                      </li>
+
                           <li
                           className=""
                           >
@@ -295,7 +316,7 @@ function Footer({grad}) {
                       </a>
                       </p>
   
-                      <p className="mt-4 text-sm text-black-500 sm:order-first sm:mt-0">&copy; 2023 Swasau Technologies</p>
+                      <p className="mt-4 text-sm text-black-500 sm:order-first sm:mt-0">&copy; 2023 Swasau Technology Pvt Ltd</p>
                   </div>
                   </div>
               </div>

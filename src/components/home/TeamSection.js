@@ -31,7 +31,7 @@ function TeamSection({ team }) {
               Our team
             </h2>
             <p className="font-light text-slate-500 sm:text-xl ">
-              At Swasau Technologies, we are proud to be fueled by a team of
+              At Swasau Technology Pvt Ltd, we are proud to be fueled by a team of
               dedicated and skilled professionals. Together, we form a
               collaborative force committed to turning innovative ideas into
               reality.

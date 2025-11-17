@@ -10,7 +10,7 @@ async function Testimonials({clients}) {
                 Our Clients
             </h2>
             <p className="mb-8 text-slate-600 font-light sm:text-xl">
-                At Swasau Technologies, we take pride in the strong relationships we've built with our clients. From startups to established enterprises, our engineering services have left a lasting impact. Join the ranks of satisfied clients who have experienced the transformative power of Swasau's tailored solutions.
+                At Swasau Technology Pvt Ltd, we take pride in the strong relationships we've built with our clients. From startups to established enterprises, our engineering services have left a lasting impact. Join the ranks of satisfied clients who have experienced the transformative power of Swasau Technology Pvt Ltd's tailored solutions.
             </p>
             </div>
             <div className="justify-center items-center flex flex-wrap">

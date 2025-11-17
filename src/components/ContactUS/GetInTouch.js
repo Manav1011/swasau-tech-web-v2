@@ -53,6 +53,9 @@ function GetInTouch() {
         partnerships, or simply to say hello. We value your input and look
         forward to connecting with you.
       </p>
+      <p className="mb-6 text-center text-sm text-gray-500">
+        GSTIN: 24ABRCS2258K1ZU
+      </p>
       <form className="space-y-3" onSubmit={handleSubmit(handleFormSubmit)}>
         <div className="sm:flex w-full">
           <div className="sm:w-1/2 sm:me-2">
